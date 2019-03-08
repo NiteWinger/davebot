@@ -3,8 +3,6 @@ const eco = require("discord-economy");
 const { Client, Attachment } = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NTUwNzQwMjcyMzMwNTcxNzg5.D1nBoA.0-KwMlyh6yb97lz_ZUqtLHJE8DA';
-
 const prefix = 'd!'
 
 let cooldown = new Set();
@@ -282,4 +280,4 @@ bot.on('message', async message => {
 
 })
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
